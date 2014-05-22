@@ -16,3 +16,10 @@ class DealnewsItem(Item):
     price = Field()
     tags = Field()
     url = Field()
+
+class EbayItem(Item):
+    id = Field()
+    title = Field()
+    price = Field()
+    tags = Field()
+    url = Field()

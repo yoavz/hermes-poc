@@ -7,7 +7,7 @@
 #
 
 BOT_NAME = 'hermes'
-# 1 second of delay per page to be nice
+# 0.25 second of delay per page to be nice
 DOWNLOAD_DELAY = 0.25
 
 SPIDER_MODULES = ['hermes.spiders']

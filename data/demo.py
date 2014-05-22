@@ -12,8 +12,12 @@ for json_file in json_files:
     print 'Building tag buckets for %s ...' % json_file
     data = []
     with open(json_file, 'r') as f:
-        for line in f:
-            data.append(json.loads(line))
+        try:
+            for line in f:
+                data.append(json.loads(line))
+        except:
+            print 'Could not parse file %s' % json_file
+            continue
     for deal in data:
         deal_tags = deal.get('tags')
         if not deal_tags:
