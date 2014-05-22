@@ -23,3 +23,9 @@ class EbayItem(Item):
     price = Field()
     tags = Field()
     url = Field()
+
+class DizbeeItem(Item):
+    title = Field()
+    price = Field()
+    tags = Field()
+    url = Field()
